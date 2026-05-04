@@ -92,3 +92,19 @@ Debugging distributed systems
 📌 Author
 
 Built as a Data Engineering learning project focused on real-time streaming systems.
+
+---
+
+# 📊 2. Architecture Diagram
+
+You can recreate this in your README using Mermaid:
+
+```mermaid
+graph LR
+A[Producer - Python] --> B[Kafka Topic: customer_events]
+B --> C[Consumer - Python]
+C --> D[PostgreSQL Database]
+Or visual description for GitHub:
++-------------+        +----------------+        +-------------------+        +------------------+
+| Producer.py | -----> | Kafka Broker   | -----> | Consumer.py       | -----> | PostgreSQL       |
+| (Events)    |        | (KRaft mode)   |        | (Processor)       |        | (Storage)  
