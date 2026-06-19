@@ -97,10 +97,6 @@ Built as a Data Engineering learning project focused on real-time streaming syst
 
 # 📊 2. Architecture Diagram
 
-You can recreate this in your README using Mermaid:
-
-```mermaid
-graph LR
 A[Producer - Python] --> B[Kafka Topic: customer_events]
 B --> C[Consumer - Python]
 C --> D[PostgreSQL Database]
